@@ -1,0 +1,21 @@
+{
+  "name": "ggw_emails",
+  "version": "0.0.1",
+  "description": "Email templates for greenpeace greenwire emails",
+  "repository" : "git@github.com:stripthis/ggw_emails.git",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "emails",
+    "greenpeace",
+    "greenwire"
+  ],
+  "author": "Remy Bertot",
+  "license": "CC-BY-SA-3.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-inline-css": "^0.1.5"
+  }
+}
