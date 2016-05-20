@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         options: {
         },
         files: {
-          'build/digest.html': 'src/digest.html'
+          'build/modules.html': 'src/modules.html'
         }
       }
     }
