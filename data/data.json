@@ -1,0 +1,16 @@
+{
+  "salutation" : "Hello",
+  "goodbye" : "Best,",
+  "signature" : "The Greenpeace Greenwire team",
+  "user" : {
+    "firstname" : "Bob",
+    "lastname" : "Hunter",
+    "email" : "bob.hunter@greenpeace.org"
+  },
+  "AN" : {
+    "welcome" : {
+      "subject" : "Password recovery for greenwire",
+      "url" : "https://greenwire.greenpeace.org/netherlands/en/user/reset/28/1448359557/X6KTa1CayRhzG1QmidVSEjwyIi2OFSOlRAK-y6g-AGM"
+    }
+  }
+}
