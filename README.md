@@ -11,10 +11,8 @@ GGW Emails
 ================
 
 (c) Greenpeace International
-Licensed under Creative Commons Attribution-ShareAlike 3.0 Unported License.
 
-Based on an MailChimp modular template patterns for email blueprints.
-https://github.com/mailchimp/email-blueprints
+Licensed under Creative Commons Attribution-ShareAlike 3.0 Unported License.
 
 
 About
@@ -33,15 +31,22 @@ send when an activity is happening on the platform. Some examples of notificatio
 How to get started
 ===================
 
-You'll need npm and grunt to inline the CSS. Indeed you can't use a spreadsheet in emails,
-but it doesn't mean your code needs to be all over the place.
+Emails require some 10 year old html and all style needs to be inline.
+Thankfully this doesn't mean your code needs to be all over the place.
+
+We use handle bar to manage templating and a little bit of grunt magic to compile the template and inline the CSS.
 
 ```
 npm install --dev
 grunt
 ```
 
-You'll find the email templates ready to use in /build
+You'll then find the email templates ready to use in /build
 
 
+Credits
+================
 
+Based on an MailChimp modular template patterns for email blueprints.
+
+https://github.com/mailchimp/email-blueprints
