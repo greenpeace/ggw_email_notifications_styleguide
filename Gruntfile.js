@@ -56,7 +56,8 @@ module.exports = function(grunt) {
         partials: [
           'src/shared/partials/*.hbs',
           'src/shared/partials/**/*.hbs'
-        ]
+        ],
+        //helpers: 'src/helpers/*.js'
       }
     },
     watch: {
@@ -79,9 +80,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
 
   // Default task(s).
-  grunt.registerTask('default', ['clean:css','less','cssmin','clean:build','compile-handlebars','inlinecss','clean:tmp']);
+  grunt.registerTask('default', ['clean:css','less','cssmin','clean:build','compile-handlebars','inlinecss']);
   grunt.registerTask('compile', ['compile-handlebars']);
   grunt.registerTask('cleanup', ['clean:build','clean:tmp']);
   grunt.registerTask('css', ['clean:css','less','cssmin','clean:tmp']);
+
 
 };

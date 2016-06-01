@@ -7,6 +7,10 @@
     "lastname" : "Hunter",
     "email" : "bob.hunter@greenpeace.org"
   },
+  "domain" : {
+    "name": "Greenwire Netherlands",
+    "url" : "https://greenwire.greenpeace.org/netherlands/"
+  },
   "AN" : {
     "welcome" : {
       "subject" : "Password recovery for greenwire",

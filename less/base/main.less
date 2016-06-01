@@ -14,7 +14,7 @@
 }
 .imageContent,
 .imageContentLast {
-  padding-bottom: 20px;
+  padding-bottom: 1px;
 }
 .nestedContainerCell {
   padding-top: 20px;
@@ -38,13 +38,24 @@ body,
   border: 0;
   border-collapse: separate;
   border-radius: 4px;
+  padding-bottom:20px;
 }
+.logo {
+  padding-Left:15px;
+  padding-bottom:15px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: @heading;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 24px;
   line-height: 125%;
   text-align: Left;
+}
+.textTitle {
+  color: @base;
+  padding-bottom: 10px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 .textContent,
 .textContentLast {
@@ -53,10 +64,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   line-height: 125%;
   text-align: Left;
+  padding-bottom: 10px;
 }
+.textTitle a,
 .textContent a,
 .textContentLast a {
-  color: #559F0C;
+  color: @green5;
   text-decoration: none;
 }
 .nestedContainer {
@@ -70,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .buttonContent {
   color:@white;
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 100%;
