@@ -1,0 +1,23 @@
+{{> header title='Welcome email'}}
+{{> body_start}}
+    {{> big_image_start}}
+        {{> image url='../img/welcome.jpg' width='560' alt='welcome!'}}
+    {{> big_image_end}}
+
+    {{> content_start title='Welcome to Greenpeace Greenwire!'}}
+        {{salutation}} {{user.firstname}},<br/><br/>
+         We're excited to have you as part of the volunteer community.
+         Click on the get started link to confirm your registration and log in on your personal profile page.
+    {{>	content_end}}
+
+    {{> button url='#' text='let\'s get started!'}}
+
+    {{> content_start}}
+        From there you can then set your password and complete your profile.
+        Please let us know if you have any questions.
+        <br/><br/>
+        {{goodbye}}<br/>
+        {{signature}}
+    {{>	content_end}}
+
+{{> body_end}}

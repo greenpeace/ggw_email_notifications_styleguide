@@ -9,14 +9,14 @@ module.exports = function(grunt) {
         src: ['tmp/**']
       },
       css: {
-        src: ['src/shared/partials/css/*','!src/shared/partials/css/outlook_css.hbs']
+        src: ['src/partials/css/*','!src/partials/css/outlook_css.hbs']
       }
     },
     less: {
       files: {
         expand: true,
         flatten: true,
-        cwd: "less/",
+        cwd: "src/less/",
         src: "*.less",
         dest: "tmp/css",
         ext: ".css"
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'tmp/css/',
         src: ['*.css'],
-        dest: 'src/shared/partials/css/',
+        dest: 'src/partials/css/',
         ext: '.hbs'
       }
     },
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: 'tmp',
+          cwd: 'tmp/emails',
           src: '**/*.html',
           dest: 'build/'
         }]
@@ -48,21 +48,20 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'src/',
-          src: 'html/**/*.hbs',
+          src: 'emails/*.hbs',
           dest: 'tmp/',
           ext: '.html'
         }],
-        templateData: 'data/data.json',
+        templateData: 'src/variables/data.json',
         partials: [
-          'src/shared/partials/*.hbs',
-          'src/shared/partials/**/*.hbs'
-        ],
-        //helpers: 'src/helpers/*.js'
+          'src/partials/*.hbs',
+          'src/partials/**/*.hbs'
+        ]
       }
     },
     watch: {
       scripts: {
-        files: ['less/**','src/**','data/**'],
+        files: ['src/**'],
         tasks: ['default'],
         options: {
           spawn: false
@@ -80,10 +79,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
 
   // Default task(s).
-  grunt.registerTask('default', ['clean:css','less','cssmin','clean:build','compile-handlebars','inlinecss']);
+  grunt.registerTask('default', ['clean:css','less','cssmin','clean:build','compile-handlebars','inlinecss', 'clean:tmp']);
   grunt.registerTask('compile', ['compile-handlebars']);
   grunt.registerTask('cleanup', ['clean:build','clean:tmp']);
   grunt.registerTask('css', ['clean:css','less','cssmin','clean:tmp']);
-
 
 };
