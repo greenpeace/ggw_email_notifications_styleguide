@@ -28,6 +28,7 @@ send when an activity is happening on the platform. Some examples of notificatio
 - Someone mentioned you in a shout
 - Etc.
 
+
 How to get started
 ===================
 

@@ -1,22 +1,112 @@
-/*////// FRAMEWORK STYLES //////*/
-.flexibleContainerCell{padding-top:20px; padding-Right:20px; padding-Left:20px;}
-.flexibleImage{height:auto;}
-.bottomShim{padding-bottom:20px;}
-.imageContent, .imageContentLast{padding-bottom:20px;}
-.nestedContainerCell{padding-top:20px; padding-Right:20px; padding-Left:20px;}
+/**
+ * FRAMEWORK STYLES
+ */
+.flexibleContainerCell {
+  padding-top: 20px;
+  padding-Right: 20px;
+  padding-Left: 20px;
+}
+.flexibleImage {
+  height: auto;
+}
+.bottomShim {
+  padding-bottom: 20px;
+}
+.imageContent,
+.imageContentLast {
+  padding-bottom: 20px;
+}
+.nestedContainerCell {
+  padding-top: 20px;
+  padding-Right: 20px;
+  padding-Left: 20px;
+}
 
-/*////// GENERAL STYLES //////*/
-body, #bodyTable{background-color:#F5F5F5;}
-#bodyCell{padding-top:40px; padding-bottom:40px;}
-#emailBody{background-color:#FFFFFF; border:1px solid #DDDDDD; border-collapse:separate; border-radius:4px;}
-h1, h2, h3, h4, h5, h6{color:#1A1A1A; font-family:Helvetica; font-size:20px; line-height:125%; text-align:Left;}
-.textContent, .textContentLast{color:#404040; font-family:Helvetica; font-size:16px; line-height:125%; text-align:Left; padding-bottom:20px;}
-.textContent a, .textContentLast a{color:#559F0C; text-decoration:none;}
-.nestedContainer{background-color:#E5E5E5; border:1px solid #CCCCCC;}
-.emailButton{background-color:#FF7704; border-collapse:separate; border-radius:4px;}
-.buttonContent{color:#FFFFFF; font-family:Helvetica; font-size:18px; font-weight:bold; line-height:100%; padding:15px; text-align:center;}
-.buttonContent a{color:#FFFFFF; display:block; text-decoration:none;}
-.emailCalendar{background-color:#FFFFFF; border:1px solid #CCCCCC;}
-.emailCalendarMonth{background-color:#559F0C; color:#FFFFFF; font-family:Helvetica, Arial, sans-serif; font-size:16px; font-weight:bold; padding-top:10px; padding-bottom:10px; text-align:center;}
-.emailCalendarDay{color:#559F0C; font-family:Helvetica, Arial, sans-serif; font-size:60px; font-weight:bold; line-height:100%; padding-top:20px; padding-bottom:20px; text-align:center;}
-.footer{text-align: center;font-size:14px;}
+/**
+ * GENERAL STYLES
+ */
+body,
+#bodyTable {
+  background-color: @secondary;
+}
+#bodyCell {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#emailBody {
+  background-color: @white;
+  border: 0;
+  border-collapse: separate;
+  border-radius: 4px;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: @heading;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 125%;
+  text-align: Left;
+}
+.textContent,
+.textContentLast {
+  color: @base;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: Left;
+}
+.textContent a,
+.textContentLast a {
+  color: #559F0C;
+  text-decoration: none;
+}
+.nestedContainer {
+  background-color: @grey-sl;
+  border: 0;
+}
+.emailButton {
+  background-color: @primary;
+  border-collapse: separate;
+  border-radius: 4px;
+}
+.buttonContent {
+  color:@white;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 100%;
+  padding: 15px;
+  text-align: center;
+}
+.buttonContent a {
+  color: @white;
+  display: block;
+  text-decoration: none;
+}
+.emailCalendar {
+  background-color: @white;
+  border: 1px solid @grey-l;
+}
+.emailCalendarMonth {
+  background-color: @green5;
+  color:@white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.emailCalendarDay {
+  color: @green5;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  font-size: 14px;
+}
