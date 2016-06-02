@@ -1,8 +1,12 @@
-{{> header title='All modules'}}
+{{> header_start}}
+	{{> title_start}}
+		All modules in one page!
+	{{> title_end}}
+{{> header_end}}
 {{> body_start}}
 	<!-- BIG IMAGE BLOCK -->
 	{{> big_image_start}}
-		{{> image url='../img/team.jpg' width='560'}}
+		{{> image url='../img/welcome.jpg' width='560'}}
 	{{> big_image_end}}
 
 	<!-- EVENT BLOCK -->
@@ -20,13 +24,30 @@
 		Kittens are highly social animals and spend most of their waking hours playing.
 	{{>	content_end}}
 
+	<!-- FRAMED CONTENT BLOCK -->
+	{{> content_framed_start}}
+	Hello bob,<br><br>
+	Are you still coming to the planning meeting next saturday?<br>
+	I did not see you sign up yet so I was wondering if you were still coming.<br>
+	<br>
+	See you later!
+	{{> content_framed_end}}
+
 	<!-- BUTTON BLOCK -->
 	{{> button url='#' text='call to action'}}
 
 	<!-- USER BLOCK -->
-	{{> user_start avatar='../img/avatar_def_big.png' title='Someone did something block' url='#test2'}}
-		A secret admirer wants to be your friend.<br>
-		To approve or reject this, view your
-		<a href="#">friends page</a>.
+	{{> user_start}}
+		{{> user_avatar_start}}
+			{{> image url='../img/avatar_def_big.png' alt='user avatar'}}
+		{{> user_avatar_end}}
+		{{> user_title_start}}
+			<a href="{{link.manage_friends}}">Someone did something block</a>
+		{{> user_title_end}}
+		{{> user_content_start}}
+			A secret admirer wants to be your friend.<br>
+			To approve or reject this, view your
+			<a href="{{link.manage_friends}}">friends page</a>.
+		{{> user_content_end}}
 	{{> user_end}}
 {{> body_end}}

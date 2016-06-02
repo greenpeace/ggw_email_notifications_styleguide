@@ -7,10 +7,16 @@
     the width blank. When a button is placed in a column,
     it's helpful to set the width to 100%.
 -->
-<table border="0" cellpadding="0" cellspacing="0" width="260" class="emailButton">
+<table border="0" cellpadding="0" cellspacing="0" width="320" class="emailButtonWrapper">
     <tr>
-        <td align="center" valign="middle" class="buttonContent">
-            <a href="{{url}}" target="_blank">{{text}}</a>
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="320" class="emailButton">
+                <tr>
+                    <td align="center" valign="middle" class="buttonContent">
+                        <a href="{{url}}" target="_blank">{{text}}</a>
+                    </td>
+                </tr>
+            </table>
         </td>
     </tr>
 </table>

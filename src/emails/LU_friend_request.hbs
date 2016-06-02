@@ -1,0 +1,24 @@
+{{> header_start}}
+    {{> title_start}}
+        {{friend.firstname}} wants to be your friend!
+    {{> title_end}}
+{{> header_end}}
+{{> body_start}}
+
+    <!-- USER BLOCK -->
+    {{> user_start}}
+        {{> user_avatar_start}}
+            {{> image url='../img/avatar_user1.jpg' alt='user avatar' width='60'}}
+        {{> user_avatar_end}}
+        {{> user_title_start}}
+            <a href="{{link.manage_friends}}">{{friend.firstname}} wants to be your friend!</a>
+        {{> user_title_end}}
+        {{> user_content_start}}
+            To approve a friend request and see who is already your friend
+            you can go to the <a href="{{link.manage_friends}}">manage friends page</a> from your profile.
+        {{> user_content_end}}
+    {{> user_end}}
+
+    {{> button url=link.manage_friends text='Reply to the friend request'}}
+
+{{> body_end}}

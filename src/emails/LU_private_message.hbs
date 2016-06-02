@@ -1,0 +1,31 @@
+{{> header_start}}
+    {{> title_start}}
+        New message from {{friend.firstname}}
+    {{> title_end}}
+{{> header_end}}
+{{> body_start}}
+
+    <!-- USER BLOCK -->
+    {{> user_start}}
+        {{> user_avatar_start}}
+            {{> image url='../img/avatar_user1.jpg' alt='user avatar' width='60'}}
+        {{> user_avatar_end}}
+        {{> user_title_start}}
+            <a href="{{link.manage_friends}}">{{friend.firstname}} sent you a private message!</a>
+        {{> user_title_end}}
+        {{> user_content_start}}
+            You have received the following message:
+        {{> user_content_end}}
+    {{> user_end}}
+
+    {{> content_framed_start}}
+        Hello bob,<br><br>
+        Are you still coming to the planning meeting next saturday?<br>
+        I did not see you sign up yet so I was wondering if you were still coming.<br>
+        <br>
+        See you later!
+    {{> content_framed_end}}
+
+    {{> button url=link.message_inbox text='Reply to this message'}}
+
+{{> body_end}}

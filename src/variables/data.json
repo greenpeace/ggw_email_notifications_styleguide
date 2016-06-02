@@ -7,14 +7,22 @@
     "lastname" : "Hunter",
     "email" : "bob.hunter@greenpeace.org"
   },
+  "friend": {
+    "firstname" : "Dorothy",
+    "lastname" : "Stowe",
+    "email" : "bob.hunter@greenpeace.org"
+  },
+  "site" : {
+    "name": "Greenpeace Greenwire",
+    "url": "https://greenwire.greenpeace.org/netherlands/"
+  },
   "domain" : {
     "name": "Greenwire Netherlands",
     "url" : "https://greenwire.greenpeace.org/netherlands/"
   },
-  "AN" : {
-    "welcome" : {
-      "subject" : "Password recovery for greenwire",
-      "url" : "https://greenwire.greenpeace.org/netherlands/en/user/reset/28/1448359557/X6KTa1CayRhzG1QmidVSEjwyIi2OFSOlRAK-y6g-AGM"
-    }
+  "link" : {
+    "one_time_auth" : "https://greenwire.greenpeace.org/netherlands/en/user/reset/28/1448359557/X6KTa1CayRhzG1QmidVSEjwyIi2OFSOlRAK-y6g-AGM",
+    "manage_friends" : "https://greenwire.greenpeace.org/netherlands/en/user/42/my-friends",
+    "message_inbox": "#",
   }
 }
