@@ -18,7 +18,7 @@ Licensed under Creative Commons Attribution-ShareAlike 3.0 Unported License.
 Online preview
 ================
 
-http://greenpeace.github.io/ggw_emails/
+http://greenpeace.github.io/ggw_email_notifications_styleguide/
 
 
 About
