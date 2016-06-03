@@ -32,13 +32,27 @@ module.exports = function(grunt) {
       }
     },
     inlinecss: {
-      main: {
-        options: {
-        },
+      all: {
         files: [{
           expand: true,
           cwd: 'tmp/emails',
-          src: '**/*.html',
+          src: 'ALL_*.html',
+          dest: 'build/'
+        }]
+      },
+      an: {
+        files: [{
+          expand: true,
+          cwd: 'tmp/emails',
+          src: 'AN_*.html',
+          dest: 'build/'
+        }]
+      },
+      lu: {
+        files: [{
+          expand: true,
+          cwd: 'tmp/emails',
+          src: 'LU_*.html',
           dest: 'build/'
         }]
       }
@@ -79,7 +93,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
 
   // Default task(s).
-  grunt.registerTask('default', ['clean:css','less','cssmin','clean:build','compile-handlebars','inlinecss', 'clean:tmp']);
+  grunt.registerTask('default', ['less','cssmin','clean:build','compile-handlebars','inlinecss:all','inlinecss:an','inlinecss:lu']);
   grunt.registerTask('compile', ['compile-handlebars']);
   grunt.registerTask('cleanup', ['clean:build','clean:tmp']);
   grunt.registerTask('css', ['clean:css','less','cssmin','clean:tmp']);

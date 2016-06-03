@@ -1,0 +1,18 @@
+{{> header_start}}
+    {{> title_start}}
+        We received your message!
+    {{> title_end}}
+{{> header_end}}
+{{> body_start}}
+
+    {{> content_start}}
+        {{salutation}} {{user.firstname}},<br/><br/>
+        This is an automated email to let your know that we
+        have received the message you sent using the contact form!
+        We will get back to you as soon as we can!
+        <br/><br/>
+        {{goodbye}}<br/>
+        {{signature}}
+    {{>	content_end}}
+
+{{> body_end}}
