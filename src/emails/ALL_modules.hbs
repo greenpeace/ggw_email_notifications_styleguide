@@ -6,7 +6,7 @@
 {{> body_start}}
 	<!-- BIG IMAGE BLOCK -->
 	{{> big_image_start}}
-		{{> image url='../img/welcome.jpg' width='560'}}
+		{{> image url='img/welcome.jpg' width='560'}}
 	{{> big_image_end}}
 
 	<!-- EVENT BLOCK -->
@@ -23,7 +23,6 @@
 		To survive, kittens need the care of their mother for the first several weeks of their life.
 		Kittens are highly social animals and spend most of their waking hours playing.
 	{{>	content_end}}
-
 	<!-- FRAMED CONTENT BLOCK -->
 	{{> content_framed_start}}
 	Hello bob,<br><br>
@@ -39,12 +38,27 @@
 	<!-- USER BLOCK -->
 	{{> user_start}}
 		{{> user_avatar_start}}
-			{{> image url='../img/avatar_def_big.png' alt='user avatar'}}
+			{{> image url='img/avatar_def_big.png' alt='user avatar'}}
 		{{> user_avatar_end}}
 		{{> user_title_start}}
 			<a href="{{link.manage_friends}}">Someone did something block</a>
 		{{> user_title_end}}
 		{{> user_content_start}}
+			A secret admirer wants to be your friend.<br>
+			To approve or reject this, view your
+			<a href="{{link.manage_friends}}">friends page</a>.
+		{{> user_content_end}}
+	{{> user_end}}
+
+	<!-- USER BLOCK WITH DATE-->
+	{{> user_start}}
+		{{> user_avatar_start}}
+			{{> image url='img/avatar_user1.jpg' alt='user avatar'}}
+		{{> user_avatar_end}}
+		{{> user_title_start}}
+			<a href="{{link.manage_friends}}">User block with date</a>
+		{{> user_title_end}}
+		{{> user_content_start datetime="Friday 03 June, 2016 - 17:44"}}
 			A secret admirer wants to be your friend.<br>
 			To approve or reject this, view your
 			<a href="{{link.manage_friends}}">friends page</a>.

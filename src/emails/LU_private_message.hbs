@@ -8,13 +8,12 @@
     <!-- USER BLOCK -->
     {{> user_start}}
         {{> user_avatar_start}}
-            {{> image url='../img/avatar_user1.jpg' alt='user avatar' width='60'}}
+            {{> image url='img/avatar_user1.jpg' alt='user avatar' width='60'}}
         {{> user_avatar_end}}
         {{> user_title_start}}
             <a href="{{link.manage_friends}}">{{friend.firstname}} sent you a private message!</a>
         {{> user_title_end}}
-        {{> user_content_start}}
-            You have received the following message:
+        {{> user_content_start datetime='Friday 03 June, 2016 - 18:44'}}
         {{> user_content_end}}
     {{> user_end}}
 

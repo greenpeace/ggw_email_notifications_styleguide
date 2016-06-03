@@ -1,6 +1,7 @@
 {
   "salutation" : "Hello",
   "goodbye" : "Best,",
+  "baseurl" : "http://greenpeace.github.io/ggw_email_notifications_styleguide/",
   "signature" : "The Greenpeace Greenwire team",
   "user" : {
     "firstname" : "Bob",
@@ -24,5 +25,10 @@
     "one_time_auth" : "https://greenwire.greenpeace.org/netherlands/en/user/reset/28/1448359557/X6KTa1CayRhzG1QmidVSEjwyIi2OFSOlRAK-y6g-AGM",
     "manage_friends" : "https://greenwire.greenpeace.org/netherlands/en/user/42/my-friends",
     "message_inbox": "#",
+    "my_profile" : "#",
+    "shoutbox" : "#/statuses/[message:field_shout_id]",
+    "friend_profile" : "#",
+    "post": "#",
+    "post_comment":"#comment"
   }
 }

@@ -1,0 +1,23 @@
+{{> header_start}}
+    {{> title_start}}
+        {{friend.firstname}} mentioned you in a comment
+    {{> title_end}}
+{{> header_end}}
+{{> body_start}}
+
+    <!-- USER BLOCK -->
+    {{> user_start}}
+        {{> user_avatar_start}}
+            {{> image url='img/avatar_user1.jpg' alt='user avatar' width='60'}}
+        {{> user_avatar_end}}
+        {{> user_title_start}}
+            <a href="{{link.post_comment}}">{{friend.firstname}} mentioned you in a comment</a>
+        {{> user_title_end}}
+        {{> user_content_start datetime='Thursday 02 June, 2016 - 11:44'}}
+            To view and reply to the comment please visit <a href="{{link.post_comment}}">the post page</a> comment section.
+        {{> user_content_end}}
+    {{> user_end}}
+
+    {{> button url=link.post_comment text='View comment'}}
+
+{{> body_end}}
